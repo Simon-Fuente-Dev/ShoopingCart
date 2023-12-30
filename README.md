@@ -1,26 +1,39 @@
-#Carro de Compras con React y LocalStorage
-Este proyecto es un carro de compras interactivo construido con React y utiliza LocalStorage para almacenar de forma persistente la información del carro. La aplicación ofrece diversas funciones que facilitan la gestión de productos durante la experiencia de compra.
+<h1>Shopping Cart with React and LocalStorage</h1>
 
-Funciones Principales
-Ver Productos:
+This project is an interactive shopping cart built with React, utilizing LocalStorage to persistently store cart information. The application offers various features that streamline product management during the shopping experience.
 
-La aplicación presenta una lista clara y organizada de productos disponibles para compra.
-Cada producto muestra información relevante, como nombre, precio y una breve descripción.
-Agregar Productos al Carro:
+<h1>Main Features</h1>
 
-Con un simple clic en el botón "Agregar al Carro", los usuarios pueden añadir productos a su carro de compras.
-La interfaz proporciona retroalimentación visual para confirmar que el producto ha sido agregado con éxito.
-Modificar Cantidad de Productos:
+<h2>View Products:</h2>
+<ul> 
+    <li>The application presents a clear and organized list of products available for purchase.</li>
+    <li>Each product displays relevant information such as name, price, and a brief description.</li>
+</ul>
 
-Dentro del carro de compras, los usuarios tienen la capacidad de ajustar la cantidad de cada producto antes de finalizar la compra.
-Los cambios en la cantidad se reflejan automáticamente en el precio total y proporcionan una vista previa instantánea del costo actualizado.
-Vaciar el Carro:
+<h2>Add Products to Cart:</h2>
+<ul>
+    <li>With a simple click on the "Add to Cart" button, users can add products to their shopping cart.</li>
+    <li>The interface provides visual feedback to confirm that the product has been successfully added.</li>
+</ul>
 
-Se incluye una opción para vaciar completamente el carro, eliminando todos los productos seleccionados.
-Una confirmación de acción ayuda a prevenir eliminaciones accidentales.
-Filtrar por Precio:
+<h2>Modify Product Quantity:</h2>
+<ul>
+    <li>Within the shopping cart, users have the ability to adjust the quantity of each product before finalizing the purchase.</li>
+    <li>Changes in quantity are automatically reflected in the total price and provide an instant preview of the updated cost.</li>
+</ul>
 
-Los usuarios pueden filtrar la lista de productos según su rango de precios, lo que facilita la búsqueda de productos dentro de un presupuesto específico.
-Filtrar por Categoría:
+<h2>Empty the Cart:</h2>
+<ul>
+    <li>An option is included to completely empty the cart, removing all selected products.</li>
+    <li>A confirmation prompt helps prevent accidental deletions.</li>
+</ul>
 
-La aplicación permite a los usuarios filtrar los productos por categoría, ayudándolos a encontrar rápidamente artículos específicos de su interés.
+<h2>Filter by Price:</h2>
+<ul>
+    <li>Users can filter the list of products based on their price range, facilitating the search for products within a specific budget.</li>
+</ul>
+
+<h2>Filter by Category:</h2>
+<ul>
+    <li>The application allows users to filter products by category, helping them quickly find items specific to their interests.</li>
+</ul>
