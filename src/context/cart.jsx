@@ -1,0 +1,41 @@
+import { createContext, useReducer } from "react"
+import { cartReducer, cartInitialState, CART_ACTION_TYPES } from "../reducers/cartReducer"
+
+export const CartContext = createContext()
+
+const { ADD_TO_CART, REDUCE_FROM_CART, REMOVE_FROM_CART, CLEAR_CART } = CART_ACTION_TYPES
+//Crear el provider
+export function CartProvider({ children }) {
+    
+    const [state, dispatch] = useReducer(cartReducer, cartInitialState)
+    
+
+    const addToCart = product => dispatch({
+        type: ADD_TO_CART,
+        payload: product
+    })
+
+    const removeFromCart = product => dispatch({
+        type: REMOVE_FROM_CART,
+        payload: product
+    })
+
+    const reduceFromCart = product => dispatch({
+        type: REDUCE_FROM_CART,
+        payload: product
+    })
+
+    const clearCart = () => dispatch({ type: CLEAR_CART })
+
+    return (
+        <CartContext.Provider value={{
+            cart: state,
+            addToCart,
+            reduceFromCart,
+            clearCart,
+            removeFromCart,
+        }}>
+            {children}
+        </CartContext.Provider>
+    )
+}
